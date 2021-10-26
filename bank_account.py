@@ -39,7 +39,7 @@ class BankAccount:
     def all_balances(cls):
         sum = 0
         for account in cls.all_accounts:
-            sum += all_accounts.account_balance
+            sum += account.account_balance
         return sum
 
 checking_account = BankAccount(4, 10500)
@@ -49,4 +49,4 @@ savings_account = BankAccount(1.5, 750)
 checking_account.deposit(500).deposit(1000).deposit(5000).withdrawl(2000).yield_interest().display_account_info()
 savings_account.deposit(621.56).deposit(45.14).withdrawl(74.10).withdrawl(.12).withdrawl(112.25).withdrawl(62.77).yield_interest().display_account_info()
 
-print(all_balances())
+print(BankAccount.all_balances())
