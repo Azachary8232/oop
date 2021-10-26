@@ -1,9 +1,9 @@
 class BankAccount:
     all_accounts = []
-    savings_account = 0
-    checking_account = 0
 
     def __init__(self, int_rate, type, balance=0):
+        self.savings_account = 0
+        self.checking_account = 0
         if type == "savings":
             self.savings_account = balance
         if type == "checking":
@@ -92,9 +92,9 @@ p1.make_deposit("savings", 1500)
 p1.make_deposit("checking", 2459)
 p1.display_user_balance("accounts")
 
-p2.make_deposit("saving", 46528.95)
+p2.make_deposit("savings", 46528.95)
 p2.make_withdrawal("savings", 965.35)
-p2.make_deposit("chekcing", 94632.55)
+p2.make_deposit("checking", 94632.55)
 p2.make_withdrawal("checking", 762.45)
 p2.display_user_balance("accounts")
 
