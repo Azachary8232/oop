@@ -31,6 +31,8 @@ p2.make_deposit(8521.65).make_deposit(45).make_withdrawal(651).make_withdrawal(2
 
 p3.make_deposit(455).make_withdrawal(212.25).make_withdrawal(168.96).make_withdrawal(201.10).display_user_balance()
 
-p1.make_transfer(500,p3)
-p1.display_user_balance()
-p3.display_user_balance()
+# p1.make_transfer(500,p3)
+# p1.display_user_balance()
+# p3.display_user_balance()
+
+print(p1.account_balance)
