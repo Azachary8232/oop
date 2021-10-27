@@ -2,10 +2,9 @@ class Ninja:
 
     def __init__(self, first_name, last_name, pet, treats, pet_food) -> None:
         self.name = first_name + last_name
-        # self.pet = pet
+        self.pet = pet
         self.pet_treats = treats
         self.pet_food = pet_food
-        self.pet = Pet(name="", type="", tricks="", health="", energy="")
 
     def walk(self):
         pass
@@ -38,13 +37,9 @@ class Pet:
         pass
 
 
-splinter = Ninja("Master ", "Splinter", "carrots", "pizza")
+splinter = Ninja("Master ", "Splinter", "Donatello", "carrots", "pizza")
 donatello = Pet("Donatello", "turtle", "Bo Staff", "super", "ninja")
 
 
-splinter.pet.pet_name = "Donatello"
 print(splinter.pet.pet_name)
 
-splinter.pet = Pet("Donatello", "turtle", "Bo Staff", "super", "ninja")
-
-print(splinter.pet.pet_name)
