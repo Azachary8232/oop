@@ -1,6 +1,6 @@
 class Ninja:
 
-    def __init__(self, first_name, last_name,  treats, pet_food) -> None:
+    def __init__(self, first_name, last_name, pet, treats, pet_food) -> None:
         self.name = first_name + last_name
         # self.pet = pet
         self.pet_treats = treats
@@ -39,14 +39,11 @@ class Pet:
 
 
 splinter = Ninja("Master ", "Splinter", "carrots", "pizza")
-# donatello = Pet("Donatello", "turtle", "Bo Staff", "super", "ninja")
+donatello = Pet("Donatello", "turtle", "Bo Staff", "super", "ninja")
 
 
-# splinter.pet.pet_name = "Donatello"
-# print(splinter.pet.pet_name)
-
-# Make an instance of a Ninja and assign them an instance of 
-# a pet to the pet attribute.
+splinter.pet.pet_name = "Donatello"
+print(splinter.pet.pet_name)
 
 splinter.pet = Pet("Donatello", "turtle", "Bo Staff", "super", "ninja")
 
