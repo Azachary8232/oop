@@ -24,3 +24,12 @@ class Pet:
     def noise(self):
         print(f"your {self.pet_type} made whatever noise a {self.pet_type} makes.")
         return self
+
+
+class Reptile(Pet):
+
+    def __init__(self, name, type, tricks, enemy):
+        super().__inti__(name, type, tricks)
+        self.enemy = enemy
+
+
