@@ -29,7 +29,7 @@ class Pet:
 class Reptile(Pet):
 
     def __init__(self, name, type, tricks, enemy):
-        super().__inti__(name, type, tricks)
+        super().__init__(name, type, tricks)
         self.enemy = enemy
 
 

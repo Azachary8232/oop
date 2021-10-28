@@ -12,7 +12,6 @@ print(donatello.pet_energy)
 print(donatello.pet_name)
 
 
-#Works for pet.Pet - the "owl" attribute***
 snake = pet.Reptile("snake", "reptile", "slither", "owl")
 snake.eat()
 print(snake.pet_name)
